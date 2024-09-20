@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { GlobalContext } from "../context/globalContext";
 
 // rrd
 function Navbar() {
+  const { activeColor } = useContext(GlobalContext);
   return (
-    <header className="bg-slate-600 py-5">
+    <header style={{ background: `${activeColor}` }} className="py-5">
       <div className="flex justify-between items-center align-elements">
         <Link className="text-white text-3xl">Logo</Link>
         <nav className="hidden md:flex">
