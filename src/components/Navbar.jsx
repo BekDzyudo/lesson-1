@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { GlobalContext } from "../context/globalContext";
+// icon heart
+import { FaHeart } from "react-icons/fa";
 
 // rrd
 function Navbar() {
@@ -10,7 +12,7 @@ function Navbar() {
       <div className="flex justify-between items-center align-elements">
         <Link className="text-white text-3xl">Logo</Link>
         <nav className="hidden md:flex">
-          <ul className="flex gap-5">
+          <ul className="flex gap-5 items-center">
             <li>
               <Link
                 to="/"
@@ -33,6 +35,11 @@ function Navbar() {
                 className="text-white font-medium hover:text-slate-400"
               >
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/likes">
+                <FaHeart className="text-red-700 text-lg" />
               </Link>
             </li>
           </ul>

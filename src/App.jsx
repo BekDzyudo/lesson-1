@@ -4,6 +4,7 @@ import Layout from "./layout/Layout";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contaxt";
+import Like from "./pages/like/Like";
 
 function App() {
   const routes = createBrowserRouter([
@@ -22,6 +23,10 @@ function App() {
         {
           path: "/contact",
           element: <Contact />,
+        },
+        {
+          path: "/likes",
+          element: <Like />,
         },
       ],
     },

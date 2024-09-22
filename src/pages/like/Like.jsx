@@ -1,9 +1,9 @@
-import { useContext } from "react";
-import { GlobalContext } from "../../context/globalContext";
+import React, { useContext } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import Images from "./Images";
+import { GlobalContext } from "../../context/globalContext";
+import ImagesLikes from "./ImagesLikes";
 
-function Home() {
+function Like() {
   const { images } = useContext(GlobalContext);
   console.log(images);
 
@@ -14,12 +14,12 @@ function Home() {
           {images &&
             images.map((item) => {
               return (
-                <Images
+                <ImagesLikes
                   key={item.id}
                   urls={item.urls}
                   alt={item.alt_description}
-                  profilImg={item.user.profile_image.small}
-                  name={item.user.name}
+                  //   profilImg={item.user.profile_image.small}
+                  //   name={item.user.name}
                 />
               );
             })}
@@ -29,4 +29,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Like;
