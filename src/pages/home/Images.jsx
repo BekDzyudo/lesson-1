@@ -21,15 +21,15 @@ function Images({ urls, alt, profilImg, name }) {
       {active && (
         <div>
           <div className="topBtn absolute top-3 right-3 flex gap-4">
-            <div className="like border-solid border-2 border-none cursor-pointer p-2 rounded-md bg-gray-200 hover:bg-gray-300">
+            <div className="like border-2 border-none cursor-pointer p-2 rounded-md bg-gray-200 hover:bg-gray-300">
               <FaHeart />
             </div>
-            <div className="plus like border-solid border-2 border-none cursor-pointer p-2 rounded-md bg-gray-200 hover:bg-gray-300">
+            <div className="plus like border-2 border-none cursor-pointer p-2 rounded-md bg-gray-200 hover:bg-gray-300">
               <FaPlus />
             </div>
           </div>
           <div className="bottomRightBtn absolute bottom-3 right-3">
-            <div className="download like border-solid border-2 border-none cursor-pointer p-2 rounded-md bg-gray-200 hover:bg-gray-300">
+            <div className="download like border-2 border-none cursor-pointer p-2 rounded-md bg-gray-200 hover:bg-gray-300">
               <MdOutlineFileDownload className="text-2xl" />
             </div>
           </div>
